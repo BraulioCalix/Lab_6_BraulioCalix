@@ -8,6 +8,10 @@ Pintura::Pintura(string colo,string aca){
     color=colo;
     acabado=aca;
 }
+string Pintura::tostring(){
+    return 0;
+
+}
 void Pintura::setAcabado(string acab){
     acabado=acab;
 }

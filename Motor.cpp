@@ -14,6 +14,9 @@ void Motor::SetConfi(string configura){
     confi=configura;
 
 }
+string Motor::tostring(){
+    return 0;
+}
 string Motor::getConfi(){
 
     return confi;

@@ -17,9 +17,9 @@ Carro::Carro(Pintura pintu,Motor moto,Chasis chasi,string nombr,int nume){
     nombre=nombr;
     numero=nume;
 }
-string tostring(){
+    string Carro::tostring(){
         return 0;
-}
+    }
     void Carro::setPintura(Pintura pi){
         pintura=pi;
     }

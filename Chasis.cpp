@@ -7,7 +7,7 @@ Chasis::Chasis(string rueda,string trans){
     ruedas=rueda;
     transmision=trans;
 }
-string tostrig(){
+string Chasis::tostring(){
 return 0;
 }
 void Chasis::setRuedas(string rue){
