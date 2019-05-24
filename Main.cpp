@@ -14,6 +14,7 @@ int main(){
     int contproduc=0;
     bool vivo =true;
     vector<Carro*> carros;
+    vector<Carro*> terminados;
     char** matrix = NULL;
 	matrix = new char*[5];
 	for (int i = 0;i<5;i++){
@@ -110,23 +111,34 @@ int main(){
             case 5: //avanzar en el ciclo
             {
                 if(matrix[4][0]=='p'){
+                    if(cont5<4){
                         cont5++;
+                    }
                         matrix[4][cont5]='C';
                 }
                 if(matrix[3][0]=='p'){
-                    cont4++;
+                    
+                    if(cont4<4){
+                        cont4++;
+                    }
                     matrix[3][cont4]='C';
                 }
                 if(matrix[2][0]=='p'){
-                    cont3++;
+                    if(cont3<4){
+                        cont3++;
+                    }
                     matrix[2][cont3]='C';
                 }
                 if(matrix[1][0]=='p'){
-                    cont2++;
+                    if(cont2<4){
+                        cont2++;
+                    }
                     matrix[1][cont2]='C';
                 }
                 if(matrix[0][0]=='p'){
-                    cont1++;
+                    if(cont1<4){
+                        cont1++;
+                    }
                     matrix[0][cont1]='C';
                 }                
             }break;
