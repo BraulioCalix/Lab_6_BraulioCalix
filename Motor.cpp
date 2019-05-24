@@ -1,4 +1,6 @@
 #include "Motor.h"
+#include <iostream>
+using namespace std;
 Motor::Motor(){
     tipo="";
     confi="";
@@ -14,8 +16,8 @@ void Motor::SetConfi(string configura){
     confi=configura;
 
 }
-string Motor::tostring(){
-    return 0;
+void Motor::tostring(){
+    cout << "motor: -tipo: "<<tipo << "configuracion: "<<confi ;
 }
 string Motor::getConfi(){
 

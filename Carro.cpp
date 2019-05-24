@@ -2,7 +2,8 @@
 #include "Motor.h"
 #include "Pintura.h"
 #include "Chasis.h"
-
+#include <iostream>
+using namespace std;
 Carro::Carro(){
     pintura = Pintura(); 
     motor = Motor();
@@ -17,8 +18,13 @@ Carro::Carro(Pintura pintu,Motor moto,Chasis chasi,string nombr,int nume){
     nombre=nombr;
     numero=nume;
 }
-    string Carro::tostring(){
-        return 0;
+    void Carro::tostring(){
+        cout << "motor: ";
+        pintura.tostring(); 
+        motor.tostring(); 
+        chasis.tostring();
+        cout <<"nombre de modelo: "<<nombre << "numero: "<<numero;
+        
     }
     void Carro::setPintura(Pintura pi){
         pintura=pi;

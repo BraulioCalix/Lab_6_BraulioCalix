@@ -1,4 +1,6 @@
 #include "Pintura.h"
+#include <iostream>
+using namespace std;
 Pintura::Pintura(){
     color="";
     acabado="";
@@ -8,9 +10,8 @@ Pintura::Pintura(string colo,string aca){
     color=colo;
     acabado=aca;
 }
-string Pintura::tostring(){
-    return 0;
-
+void Pintura::tostring(){
+    cout << "pintura: color- " <<color << "acabado: "<< acabado ;
 }
 void Pintura::setAcabado(string acab){
     acabado=acab;

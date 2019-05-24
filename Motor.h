@@ -10,7 +10,7 @@ class Motor{
 	public:
     Motor();
     Motor(string, string);
-    string tostring();
+    void tostring();
     string getTipo();
     string getConfi();
     void setTipo(string);

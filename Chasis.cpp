@@ -1,4 +1,6 @@
 #include "Chasis.h"
+#include <iostream>
+using namespace std;
 Chasis::Chasis(){
     ruedas="";
     transmision="";
@@ -7,8 +9,8 @@ Chasis::Chasis(string rueda,string trans){
     ruedas=rueda;
     transmision=trans;
 }
-string Chasis::tostring(){
-return 0;
+void Chasis::tostring(){
+cout<< "Chasis - ruedas:" << ruedas <<" "<<"- transmision: "<<transmision ;
 }
 void Chasis::setRuedas(string rue){
     ruedas=rue;

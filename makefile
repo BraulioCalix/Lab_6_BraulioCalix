@@ -1,5 +1,6 @@
 Main.out: Main.o Chasis.o Pintura.o Motor.o Carro.o
-	g++ Main.o Chasis.o Pintura.o Motor.o Carro.o -o Main.out
+	g++ Main.o Chasis.o Pintura.o Motor.o Carro.o -o Main.out 
+	./Main.out
 Main.o: Main.cpp Carro.h Chasis.h Pintura.h Motor.h 
 	g++ -c Main.cpp
 Chasis.o: Chasis.h Chasis.cpp

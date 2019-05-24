@@ -9,7 +9,7 @@ class Pintura{
 	public:
     Pintura();
     Pintura(string, string);
-    string tostring();
+    void tostring();
     void setColor(string);
     string getColor();
     void setAcabado(string);

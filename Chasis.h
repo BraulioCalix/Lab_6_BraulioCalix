@@ -9,7 +9,7 @@ class Chasis{
 	public:
     Chasis();
     Chasis(string, string);
-    string tostring();
+    void tostring();
     void setRuedas(string);
     string getRuedas();
     void setTransmision(string);
