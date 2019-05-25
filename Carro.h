@@ -15,6 +15,8 @@ class Carro{
 	public:
     Carro();
     Carro(Pintura,Motor,Chasis,string,int);
+    void setNumero(int);
+    int getNumero();
     void tostring();
     void setPintura(Pintura);
     Pintura getPintura();
