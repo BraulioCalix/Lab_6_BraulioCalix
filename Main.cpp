@@ -18,10 +18,10 @@ int main(){
     char** matrix = NULL;
 	matrix = new char*[5];
 	for (int i = 0;i<5;i++){
-		matrix[i]= new char[5];
+		matrix[i]= new char[4];
 	}
     for (int i = 0; i < 5; i++){
-        for (int j = 0; j < 5; j++){
+        for (int j = 0; j < 4; j++){
             matrix[i][j]=' ';
         }
         
@@ -84,7 +84,7 @@ int main(){
             {
                 if (cuentalinea>0){
                     for (int i = 0; i < 5; i++){
-                        for (int j = 0; j < 5; j++){
+                        for (int j = 0; j < 4; j++){
                             cout << "["<<matrix[i][j]<< "]";
 
                         }
@@ -110,9 +110,13 @@ int main(){
             break;
             case 5: //avanzar en el ciclo
             {
+                
                 if(matrix[4][0]=='p'){
                     if(cont5<4){
                         cont5++;
+                       
+                    }if(cont5==3){
+                        cout<< "ya se lleno"<< endl;
                     }
                         matrix[4][cont5]='C';
                 }
@@ -120,24 +124,32 @@ int main(){
                     
                     if(cont4<4){
                         cont4++;
+                    }if(cont4==3){
+                        cout<< "ya se lleno"<< endl;
                     }
                     matrix[3][cont4]='C';
                 }
                 if(matrix[2][0]=='p'){
                     if(cont3<4){
                         cont3++;
+                    }if(cont3==3){
+                        cout<< "ya se lleno"<< endl;
                     }
                     matrix[2][cont3]='C';
                 }
                 if(matrix[1][0]=='p'){
                     if(cont2<4){
                         cont2++;
+                    }if(cont2==3){
+                        cout<< "ya se lleno"<< endl;
                     }
                     matrix[1][cont2]='C';
                 }
                 if(matrix[0][0]=='p'){
                     if(cont1<4){
                         cont1++;
+                    }if(cont1==3){
+                        cout<< "ya se lleno"<< endl;
                     }
                     matrix[0][cont1]='C';
                 }                

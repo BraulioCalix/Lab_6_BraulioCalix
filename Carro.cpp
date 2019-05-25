@@ -26,6 +26,13 @@ Carro::Carro(Pintura pintu,Motor moto,Chasis chasi,string nombr,int nume){
         cout <<"nombre de modelo: "<<nombre << "numero: "<<numero;
         
     }
+    void Carro::setNumero(int nume){
+        numero=nume;
+    }
+    int Carro::getNumero(){
+        return numero;
+
+    }
     void Carro::setPintura(Pintura pi){
         pintura=pi;
     }
